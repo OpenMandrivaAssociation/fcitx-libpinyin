@@ -5,7 +5,7 @@ Name: fcitx-libpinyin
 Version: 0.2.92
 %if "%{beta}" == ""
 %if "%{scmrev}" == ""
-Release: 3
+Release: 4
 Source0: http://fcitx.googlecode.com/files/%{name}-%{version}_dict.tar.xz
 %else
 Release: 0.%{scmrev}.1
