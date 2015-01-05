@@ -5,8 +5,8 @@ Name: fcitx-libpinyin
 Version: 0.2.92
 %if "%{beta}" == ""
 %if "%{scmrev}" == ""
-Release: 8
-Source0: http://fcitx.googlecode.com/files/%{name}-%{version}_dict.tar.xz
+Release: 9
+Source0: http://downloads.fcitx-im.org/%{name}/%{name}-%{version}_dict.tar.xz
 %else
 Release: 0.%{scmrev}.1
 Source0: %{name}-%{scmrev}.tar.xz
@@ -21,7 +21,7 @@ Source0: %{name}-%{scmrev}.tar.xz
 %endif
 %endif
 Summary: LibPinYin IM plugin for fcitx
-URL: http://fcitx.googlecode.com/
+URL: http://www.fcitx-im.org
 License: GPLv2
 Group: System/Internationalization
 BuildRequires: cmake
@@ -30,7 +30,7 @@ BuildRequires: pkgconfig(libpinyin) libpinyin
 
 %track
 prog %{name} = {
-	url = http://code.google.com/p/fcitx/downloads/list
+	url = http://downloads.fcitx-im.org/%{name}
 	regex = %name-(__VER__)_dict\.tar\.xz
 	version = %{version}
 }
