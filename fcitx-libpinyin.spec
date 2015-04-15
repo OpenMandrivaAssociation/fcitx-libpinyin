@@ -27,6 +27,7 @@ Group: System/Internationalization
 BuildRequires: cmake
 BuildRequires: pkgconfig(fcitx)
 BuildRequires: pkgconfig(libpinyin) libpinyin
+BuildRequires: pkgconfig(QtWebKit)
 
 %track
 prog %{name} = {
