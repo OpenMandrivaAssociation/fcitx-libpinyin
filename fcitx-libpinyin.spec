@@ -25,6 +25,7 @@ URL: http://www.fcitx-im.org
 License: GPLv2
 Group: System/Internationalization
 BuildRequires: cmake
+BuildRequires: fcitx-qt4
 BuildRequires: pkgconfig(fcitx)
 BuildRequires: pkgconfig(libpinyin) libpinyin
 BuildRequires: pkgconfig(QtWebKit)
@@ -56,8 +57,10 @@ LibPinYin IM plugin for fcitx
 
 %files -f %name.lang
 %_libdir/fcitx/*.so
+%_libdir/fcitx/qt/*.so
 %_datadir/fcitx/addon/*
 %_datadir/fcitx/configdesc/*
 %_datadir/fcitx/inputmethod/*
 %_datadir/fcitx/libpinyin
+%_datadir/fcitx/imicon/*
 %_datadir/icons/*/*/*/*
