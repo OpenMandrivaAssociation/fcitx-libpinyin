@@ -2,11 +2,11 @@
 %define scmrev %{nil}
 
 Name: fcitx-libpinyin
-Version: 0.3.1
+Version: 0.3.3
 %if "%{beta}" == ""
 %if "%{scmrev}" == ""
-Release: 2
-Source0: http://downloads.fcitx-im.org/%{name}/%{name}-%{version}_dict.tar.xz
+Release: 1
+Source0: http://download.fcitx-im.org/%{name}/%{name}-%{version}_dict.tar.xz
 %else
 Release: 0.%{scmrev}.1
 Source0: %{name}-%{scmrev}.tar.xz
