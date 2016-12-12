@@ -2,7 +2,7 @@
 %define scmrev %{nil}
 
 Name: fcitx-libpinyin
-Version: 0.3.3
+Version: 0.4.0
 %if "%{beta}" == ""
 %if "%{scmrev}" == ""
 Release: 1
@@ -38,7 +38,7 @@ prog %{name} = {
 }
 
 %description
-LibPinYin IM plugin for fcitx
+LibPinYin IM plugin for fcitx.
 
 %prep
 %if "%{scmrev}" == ""
