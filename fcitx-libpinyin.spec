@@ -2,7 +2,7 @@
 %define scmrev %{nil}
 
 Name: fcitx-libpinyin
-Version: 0.4.0
+Version: 0.5.3
 %if "%{beta}" == ""
 %if "%{scmrev}" == ""
 Release: 1
@@ -25,11 +25,10 @@ URL: http://www.fcitx-im.org
 License: GPLv2
 Group: System/Internationalization
 BuildRequires: cmake
-BuildRequires: fcitx-qt4
+BuildRequires:	cmake(FcitxQt5DBusAddons)
+BuildRequires:	cmake(FcitxQt5WidgetsAddons)
 BuildRequires: pkgconfig(fcitx)
 BuildRequires: pkgconfig(libpinyin) libpinyin
-BuildRequires: pkgconfig(QtWebKit)
-
 %track
 prog %{name} = {
 	url = http://downloads.fcitx-im.org/%{name}
