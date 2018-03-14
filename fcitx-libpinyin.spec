@@ -25,7 +25,7 @@ URL: http://www.fcitx-im.org
 License: GPLv2
 Group: System/Internationalization
 BuildRequires: cmake
-BuildRequires;	cmake(ECM)
+BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(Qt5Core)
 BuildRequires: cmake(FcitxQt5DBusAddons)
 BuildRequires: cmake(FcitxQt5WidgetsAddons)
