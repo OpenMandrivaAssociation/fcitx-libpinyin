@@ -26,7 +26,7 @@ License: GPLv2
 Group: System/Internationalization
 BuildRequires: cmake
 BuildRequires:	cmake(ECM)
-BuildRequires:	cmake(Qt5Core)
+BuildRequires:	cmake(Qt5Core) cmake(Qt5Gui) cmake(Qt5WebEngineWidgets) cmake(Qt5Network) cmake(Qt5DBus)
 BuildRequires: cmake(FcitxQt5DBusAddons)
 BuildRequires: cmake(FcitxQt5WidgetsAddons)
 BuildRequires: pkgconfig(fcitx)
