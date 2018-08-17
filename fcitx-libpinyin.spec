@@ -5,7 +5,7 @@ Name: fcitx-libpinyin
 Version: 0.5.3
 %if "%{beta}" == ""
 %if "%{scmrev}" == ""
-Release: 1
+Release: 2
 Source0: http://download.fcitx-im.org/%{name}/%{name}-%{version}_dict.tar.xz
 %else
 Release: 0.%{scmrev}.1
@@ -31,12 +31,6 @@ BuildRequires: cmake(FcitxQt5DBusAddons)
 BuildRequires: cmake(FcitxQt5WidgetsAddons)
 BuildRequires: pkgconfig(fcitx)
 BuildRequires: pkgconfig(libpinyin) libpinyin
-%track
-prog %{name} = {
-	url = http://downloads.fcitx-im.org/%{name}
-	regex = %name-(__VER__)_dict\.tar\.xz
-	version = %{version}
-}
 
 %description
 LibPinYin IM plugin for fcitx.
