@@ -31,6 +31,7 @@ BuildRequires: cmake(FcitxQt5DBusAddons)
 BuildRequires: cmake(FcitxQt5WidgetsAddons)
 BuildRequires: pkgconfig(fcitx)
 BuildRequires: pkgconfig(libpinyin) libpinyin
+BuildRequires: pkgconfig(dbus-1)
 
 %description
 LibPinYin IM plugin for fcitx.
