@@ -21,7 +21,7 @@ Source0: %{name}-%{scmrev}.tar.xz
 %endif
 %endif
 Summary: LibPinYin IM plugin for fcitx
-URL: http://www.fcitx-im.org
+URL: https://www.fcitx-im.org
 License: GPLv2
 Group: System/Internationalization
 BuildRequires: cmake
